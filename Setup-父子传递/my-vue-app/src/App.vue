@@ -19,7 +19,7 @@ let msg = ref("父传子的元素")
 
 
 //定义子传父的元素
-let data = ref("测试")
+let data = ref("test")
 const changeHome=(val)=>{
   data.value = val.value
 }
