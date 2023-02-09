@@ -5,24 +5,13 @@
     <h2>父组件</h2>
   </div>
   <HelloWorld :msg='msg' />
-<!-- 子传父-->
-<!--  <HelloWorld @clickChild='changeHome' />-->
-<!--  <h2 >{{data}}</h2>-->
-<!--  <hr>-->
 </template>
 
 
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import {onMounted, ref} from 'vue'
+import {ref} from 'vue'
 let msg = ref("父传子的元素")
-
-
-//定义子传父的元素
-let data = ref("test")
-const changeHome=(val)=>{
-  data.value = val.value
-}
 </script>
 
 
